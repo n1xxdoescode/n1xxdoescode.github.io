@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> door game </title>
+		<style>
+			.title {
+				font-size: 40px;
+				margin-top: 50%;
+			}
+			.buttons {
+				font-size: 30px;
+			}
+			.tip {
+				margin-top: 60%;
+				color: #000000FF;
+			}
+		</style>
+		<script>
+			let wrongmsgs = ["wrong one bro", "nuh uh", "whos there? yo mom", "meow, wrong one :3", "im not a door, i identify as they/the-"]
+			let msgs = ["you got it, you're good at this!", "that was just luck, you still succ", "nice, you got that one"]
+			function getRandomInt(min, max) {
+			    return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			function wrongone() {
+				alert(wrongmsgs[getRandomInt(0, 4)]);
+				window.location.replace("index.html");
+			}
+			function rightone() {
+				alert(msgs[getRandomInt(0, 2)]);
+			}
+		</script>
+	</head>
+	<body align="center">
+		<p class="title"><b>stage2!</b><br>you passed that one, you're still stuck tho haha</p>
+		<button class="buttons" onclick="wrongone()">door</button>
+		<button class="buttons" onclick="wrongone()">door</button>
+		<button class="buttons" onclick="wrongone()">door</button>
+		<a href="stage3.html"><button class="buttons" onclick="rightone()">door</button></a>
+		<p class="tip"> hey, you might need <a href="definitelynotavirus.txt" download class="tip">this</a></p>
+	</body>
+</html>

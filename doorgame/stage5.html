@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> door game </title>
+		<style>
+			.title {
+				font-size: 40px;
+				margin-top: 26%;
+			}
+			.buttons {
+				font-size: 30px;
+			}
+			#stg {
+				width: 140px;
+			}
+		</style>
+		<script>
+			let wrongmsgs = ["wrong one bro", "nuh uh", "whos there? yo mom", "meow, wrong one :3", "im not a door, i identify as they/the-"]
+			let msgs = ["you got it, you're good at this!", "that was just luck, you still succ", "nice, you got that one"]
+			let texbox = "";
+			function getRandomInt(min, max) {
+			    return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			function wrongone() {
+				alert(wrongmsgs[getRandomInt(0, 4)]);
+				window.location.replace("index.html");
+			}
+			function getstage() {
+				let texbox = document.getElementById("stg").value;
+				if (texbox==="stage5!") {
+					alert("thanks!");
+					window.location.href = "stage6.html";
+				} else if (texbox==="") {
+					alert("wow, you entered nothing.");
+					window.location.replace("index.html");
+				} else {
+					alert("ALL YOU HAD TO DO WAS CHANGE THE NUMBER RAHHHHHHH");
+					window.location.replace("index.html");
+				}
+			}
+		</script>
+	</head>
+	<body align="center">
+		<p class="title">
+			<input class="title" type="text" placeholder="stage4!" id="stg">
+			<br>
+			can you change the text up there? i got lazy
+		</p>
+		<button class="buttons" onclick="getstage()">next stage</button>
+		<button class="buttons" onclick="wrongone()">door</button>
+		<button class="buttons" onclick="wrongone()">door</button>
+		<button class="buttons" onclick="wrongone()">door</button>
+	</body>
+</html>
