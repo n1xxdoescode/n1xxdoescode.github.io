@@ -1,0 +1,7 @@
+#header_image {
+    margin: -1em;
+    width: 107%;
+    height: auto;
+    max-height: 5em;
+    object-fit: cover;
+}
