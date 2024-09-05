@@ -1,7 +1,9 @@
 #header_image {
-    margin: -2.4vw;
+    margin-top: -2vh;
+    margin-left: -2.5vw;
+    margin-right: -2.5vw;
     width: 100vw;
-    height: auto;
-    max-height: 20vw;
+    height: auto;   
+    max-height: 20vh;
     object-fit: cover;
 }
