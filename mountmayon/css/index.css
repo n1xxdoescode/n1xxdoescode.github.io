@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("opensans.ttf");
+}
+
+body {
+    font-family: "OpenSans";
+}
+
 #header_image {
     width: 100%;
     height: auto;   
@@ -5,10 +14,14 @@
     object-fit: cover;
 }
 
-.buttons {
-    border-radius: 50px;
+footer {
+    color: #B9B9B9;
 }
 
-#navbar {
-    border-radius: 50px;
+#nixx {
+    color: #99C2F0;
+}
+
+#officers {
+    color: #50E565;
 }
