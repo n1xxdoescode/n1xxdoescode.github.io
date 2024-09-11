@@ -1,0 +1,14 @@
+#header_image {
+    width: 100%;
+    height: auto;   
+    max-height: 20vh;
+    object-fit: cover;
+}
+
+.buttons {
+    border-radius: 50px;
+}
+
+#navbar {
+    border-radius: 50px;
+}
