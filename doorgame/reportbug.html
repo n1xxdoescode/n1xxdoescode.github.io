@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Report Bug (door game) </title>
+		<style>
+			#err {
+				color: #44000055;
+			}
+		</style>
+		<script>
+			let firstName = "";
+			let verCode = "";
+			let hernamehihi = "BIANCA";
+			function submitReport() {
+				firstName = document.getElementById("firstName").value;
+				verCode = document.getElementById("verCode").value;
+				if (verCode==="24221206") {
+					if (firstName===hernamehihi) {
+						alert("Bug Report Sent!");
+						alert("oo nga pala");
+					    window.location.href = "bugreported.html";
+					} else {
+						alert("Bug Report Sent!");
+					}
+				} else {
+					alert("VersionCode not valid.");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<p>We detected an unusual activity on this website, please report the bug to the devs.</p>
+		<p id="err">apierr 6 "LIVING_PROGRAM"</p>
+		<p> Please fill out this form. (Logs will be automatically sent) </p>
+		<input type="text" placeholder="First Name (UPPERCASE)" id="firstName">
+		<br>
+		<input type="text" placeholder="Version Code (8 Digit)" id="verCode">
+		<br>
+		<button onclick="submitReport()">Submit</button>
+	</body>
+</html>
